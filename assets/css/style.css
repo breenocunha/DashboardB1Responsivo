@@ -478,7 +478,7 @@ body {
         left: 0;
     }
     .toggle {
-        z-index: 10001;
+        z-index: 1001;
     }
     .main.active .toggle {
         position: fixed;
