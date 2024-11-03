@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard B1</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                        <span class="title">B1 Informática</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="chatbox-outline"></ion-icon></span>
+                        <span class="title">Avaliações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                        <span class="title">Ajuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <span class="title">Senha</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--main-->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!--seach-->
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Pesquise aqui" name="" id="">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!--userImg-->
+                <div class="user">
+                    <img src="assets/images/user.jpg" alt="">
+                </div>
+            </div>
+
+
+            <!--cards-->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Vendas do dia</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">675</div>
+                        <div class="cardName">Vendas</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="bar-chart-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardName">Avaliações</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">R$12.100,00</div>
+                        <div class="cardName">Ganhos</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Add Charts-->
+            <div class="graphBox">
+                <div class="box">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="box">
+                    <canvas id="earning"></canvas>
+                </div>
+            </div>
+            
+            <div class="details">
+                <!--order details list-->
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nome</td>
+                                <td>Preço</td>
+                                <td>Pagamento</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Placa de Vídeo GTX1050</td>
+                                <td>R$1.200,00</td>
+                                <td>Componentes</td>
+                                <td><span class="status delivered">Entregue</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Notebook Dell Inspiron 15</td>
+                                <td>R$ 3.499,00</td>
+                                <td>Computadores</td>
+                                <td><span class="status pending">Pendente</span></td>
+                              </tr>
+                              <tr>
+                                <td>Mouse Gamer Razer DeathAdder</td>
+                                <td>R$ 299,00</td>
+                                <td>Periféricos</td>
+                                <td><span class="status return">Retornar</span></td>
+                              </tr>
+                              <tr>
+                                <td>Monitor Samsung Curvo 27"</td>
+                                <td>R$ 1.499,00</td>
+                                <td>Monitores</td>
+                                <td><span class="status inprogress">Em Andamento</span></td>
+                              </tr>
+                              <tr>
+                                <td>Teclado Mecânico Redragon Kumara</td>
+                                <td>R$ 249,00</td>
+                                <td>Periféricos</td>
+                                <td><span class="status delivered">Entregue</span></td>
+                              </tr>
+                              <tr>
+                                <td>SSD Kingston 480GB</td>
+                                <td>R$ 349,00</td>
+                                <td>Armazenamento</td>
+                                <td><span class="status pending">Pendente</span></td>
+                              </tr>
+                              <tr>
+                                <td>Placa de Vídeo NVIDIA RTX 3060</td>
+                                <td>R$ 2.899,00</td>
+                                <td>Componentes</td>
+                                <td><span class="status return">Retornar</span></td>
+                              </tr>
+                              <tr>
+                                <td>Impressora HP LaserJet Pro</td>
+                                <td>R$ 1.199,00</td>
+                                <td>Impressoras</td>
+                                <td><span class="status inprogress">Em Andamento</span></td>
+                              </tr>
+                              <tr>
+                                <td>Fone de Ouvido JBL Quantum 100</td>
+                                <td>R$ 179,00</td>
+                                <td>Periféricos</td>
+                                <td><span class="status pending">Pendente</span></td>
+                              </tr>
+                              <tr>
+                                <td>Webcam Logitech C920 HD</td>
+                                <td>R$ 299,00</td>
+                                <td>Acessórios</td>
+                                <td><span class="status pending">Pendente</span></td>
+                              </tr>
+                              <tr>
+                                <td>Fonte Corsair 550W 80 Plus</td>
+                                <td>R$ 429,00</td>
+                                <td>Componentes</td>
+                                <td><span class="status inprogress">Em Andamento</span></td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--New Customers-->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="assets/images/img1.jpg" alt=""></div></td>
+                            <td><h4>David <br><span>Beckman</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="assets/images/img2.jpg" alt=""></div></td>
+                            <td><h4>Miguel <br><span>Andrade</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="assets/images/img3.jpg" alt=""></div></td>
+                            <td><h4>Letícia <br><span>Rocha</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="assets/images/img4.jpg" alt=""></div></td>
+                            <td><h4>Lucas <br><span>Ferreira</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="assets/images/img5.jpg" alt=""></div></td>
+                            <td><h4>Rafael <br><span>Costa</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="assets/images/img6.jpg" alt=""></div></td>
+                            <td><h4>Ana <br><span>Martins</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="assets/images/img7.jpg" alt=""></div></td>
+                            <td><h4>Camila <br><span>Almeida</span></h4></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="assets/js/my_chart.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function(){
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+
+
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) => 
+        item.addEventListener('mouseover', activeLink));
+    </script>
+</body>
+</html>
